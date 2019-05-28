@@ -25,7 +25,7 @@ except ResponseError as err:
 
 # Put an object 'pumaserver_debug.log' with contents from 'pumaserver_debug.log'.
 try:
-	   minioCliient.fput_object(bucket,data,path)
+	   minioClient.fput_object(bucket,data,path)
 	   print("writing to bucket")
 except ResponseError as err:
 	   print(err)
